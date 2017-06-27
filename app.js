@@ -25,6 +25,24 @@ router.get('/ejs_test', async (ctx) => {
 router.get('/data_test', async (ctx) => {
   ctx.body = await service.getTestData();
 });
+router.get('/ajax/index', async (ctx) => {
+  ctx.body = await service.getIndexData();
+});
+router.get('/ajax/search', async (ctx, next) => {
+  const qs = require('querystring');
+  let params = qs.parse(ctx.req._parsedUrl.query);
+  let start = params.start;
+  let end = params.end;
+  let keyword = params.keyword;
+  ctx.body = await service.getSearchData(start, end, keyword);
+});
+
+
+
+
+
+
+
 app.use(router.routes());
 
 app.listen(3001);
