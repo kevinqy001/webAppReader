@@ -19,19 +19,16 @@ app.use(koa_static({
   maxage: 0
 }));
 
-router.get('/router_test', async (ctx) => {
-  ctx.body = "Try to reach Koa-router";
-});
 router.get('/ejs_test', async (ctx) => {
   await ctx.render('test', {
     title: 'Hello EJS',
   })
 });
-router.get('/data_test', async (ctx) => {
-  ctx.body = await service.getTestData();
+router.get('/data_test', (ctx) => {
+  ctx.body = service.getTestData();
 });
-router.get('/ajax/index', async (ctx) => {
-  ctx.body = await service.getIndexData();
+router.get('/ajax/index', (ctx) => {
+  ctx.body = service.getIndexData();
 });
 router.get('/ajax/search', async (ctx) => {
   const qs = require('querystring');
