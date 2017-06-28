@@ -1,0 +1,241 @@
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    background: #e9dfc7;
+}
+
+.m-read-content {
+    font-size: 14px;
+    color: #555;
+    line-height: 31px;
+    padding: 15px;
+    margin: 0 0 1em 0;
+}
+
+.m-read-content p {
+    text-indent: 2em;
+    margin: 0.5em 0;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.m-read-content h4 {
+    font-size: 20px;
+    color: #736357;
+    border-bottom: 1px solid #736357;
+    letter-spacing: 2px;
+}
+
+.u-tab {
+    height: 34px;
+    margin: 10px auto;
+    line-height: 34px;
+    border-radius: 8px;
+    border: 1px solid #858382;
+    font-size: 12px;
+    background: #000;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.u-tab li {
+    display: inline-block;
+    width: 49%;
+    float: left;
+    color: #fff;
+    border-right: 1px solid #858382;
+    text-align: center;
+}
+
+.u-tab li:nth-child(2) {
+    border-right: none;
+}
+
+.m-button-bar {
+    width: 70%;
+    max-width: 800px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 9999;
+    background: #000;
+}
+
+.icon-back {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    width: 23px;
+    height: 23px;
+    background: url("../img/reader/icon-back.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.top-nav-title {
+    position: absolute;
+    top: 18px;
+    left: 42px;
+    color: #d5d5d6;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 9999;
+    background: #000;
+    opacity: 0.8;
+}
+
+.u-nav {
+    width: 100%;
+}
+
+.u-nav li {
+    float: left;
+    height: 70px;
+    width: calc(100% / 3);
+    color: #d5d5d6;
+    text-align: center;
+
+}
+
+.u-nav li:nth-child(1) .u-nav-listIcon {
+    width: 20px;
+    height: 20px;
+    margin: 18px auto 0;
+    background: url("../img/reader/icon-catalog.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.u-nav li:nth-child(2) .u-nav-listIcon {
+    width: 20px;
+    height: 20px;
+    margin: 18px auto 0;
+    background: url("../img/reader/icon-font.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.u-nav li:nth-child(2) .fontSelected {
+    width: 20px;
+    height: 20px;
+    margin: 18px auto 0;
+    background: url("../img/reader/icon-font-sel.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.u-nav-listIcon-night {
+    width: 20px;
+    height: 20px;
+    margin: 18px auto 0;
+    background: url("../img/reader/icon-night.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.u-nav-listIcon-day {
+    width: 20px;
+    height: 20px;
+    margin: 18px auto 0;
+    background: url("../img/reader/icon-day.png") no-repeat center center;
+    background-size: 20px 20px;
+}
+
+.day_button {
+    display: none;
+}
+
+.u-nav-listTitle {
+    margin: 3px 0 0 0;
+}
+
+.bottom-panel {
+    position: fixed;
+    bottom: 70px;
+    height: 130px;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    opacity: 0.8;
+    z-index: 10000;
+}
+
+.child-mod {
+    padding: 5px 10px;
+    margin: 15px;
+}
+
+.child-mod span {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.font-size-button {
+    background: none;
+    border: 1px solid #8c8c8c;
+    border-radius: 16px;
+    color: #fff;
+    padding: 5px 40px;
+}
+
+.child-mod button:nth-child(2) {
+    margin-right: 10px;
+}
+
+.bg-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: -10px;
+    margin-right: 10px;
+}
+
+.child-mod div.bg-container:nth-child(2) {
+    background-color: #fff;
+}
+
+.child-mod div.bg-container:nth-child(3) {
+    background-color: #e9dfc7;
+}
+
+.child-mod div.bg-container:nth-child(4) {
+    background-color: #a5a2a2;
+}
+
+.child-mod div.bg-container:nth-child(5) {
+    background-color: #4fd096;
+}
+
+.child-mod div.bg-container:nth-child(6) {
+    background-color: #05080d;
+    border: 1px solid #bcd0c4;
+}
+
+.bg-container-current {
+    box-shadow: 0 0 2px 2px #ff7800;
+}
+
+.action-control-center {
+    position: fixed;
+    z-index: 10001;
+    width: 70%;
+    height: 40%;
+    top: 30%;
+    left: 15%;
+}
+

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link type="text/css" rel="stylesheet" href="../static/css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/reader.css">
+    <title>Reader</title>
+</head>
+<body>
+<div id="root" class="container">
+    <div class="m-action-control">
+        <div id="action_center" class="action-control-center" @click="navShow"></div>
+    </div>
+    <div id="top-nav" class="top-nav" v-show="showNav">
+        <div class="icon-back"></div>
+        <div class="top-nav-title">返回书架</div>
+    </div>
+    <div id="fiction_chapter_title"></div>
+    <div id="fiction_container" class="m-read-content">
+        <h4>{{fictionTitle}}</h4>
+        <p v-for="item in fictionContent">{{item}}</p>
+    </div>
+    <div class="m-button-bar">
+        <ul class="u-tab">
+            <li id="prev_button" @click="chapterChange(-1)">上一章</li>
+            <li id="next_button" @click="chapterChange(1)">下一章</li>
+        </ul>
+    </div>
+    <div id="setting-container" class="bottom-panel animated" v-show="showFont">
+        <div class="child-mod">
+            <span>字号</span>
+            <button id="large-font" class="font-size-button">大</button>
+            <button id="small-font" class="font-size-button">小</button>
+        </div>
+        <div class="child-mod">
+            <span>背景</span>
+            <div class="bg-container"></div>
+            <div class="bg-container bg-container-current"></div>
+            <div class="bg-container"></div>
+            <div class="bg-container"></div>
+            <div class="bg-container "></div>
+        </div>
+    </div>
+    <div id="bottom-nav" class="bottom-nav" v-show="showNav">
+        <ul class="u-nav">
+            <li>
+                <div class="u-nav-listIcon"></div>
+                <div class="u-nav-listTitle">目录</div>
+            </li>
+            <li @click="fontShow">
+                <div class="u-nav-listIcon" :class="{fontSelected: showFont}"></div>
+                <div class="u-nav-listTitle">字体</div>
+            </li>
+            <li class="night_button">
+                <div class="u-nav-listIcon-night"></div>
+                <div class="u-nav-listTitle">夜间</div>
+            </li>
+            <li class="day_button">
+                <div class="u-nav-listIcon-day"></div>
+                <div class="u-nav-listTitle">白天</div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="../static/script/lib/vue.min.js"></script>
+<script src="../static/script/lib/axios.min.js"></script>
+<script src="../static/script/lib/zepto.min.js"></script>
+<script>
+  window.jQuery = $;
+</script>
+<script src="../static/script/lib/jquery.base64.js"></script>
+<script src="../static/script/lib/jquery.jsonp.js"></script>
+<script src="../static/script/reader.js"></script>
+
+</html>

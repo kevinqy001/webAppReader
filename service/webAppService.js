@@ -1,13 +1,34 @@
 const fs = require('fs');
+const http = require('http');
 module.exports.getTestData = function () {
   return fs.readFileSync('./mock/test.json', 'UTF-8')
 };
 module.exports.getIndexData = function () {
   return fs.readFileSync('./mock/index.json', 'UTF-8')
 };
+module.exports.getRankData = function () {
+  return fs.readFileSync('./mock/rank.json', 'UTF-8')
+};
+module.exports.getCategoryData = function () {
+  return fs.readFileSync('./mock/category.json', 'UTF-8')
+};
+module.exports.getBookshelfData = function () {
+  return fs.readFileSync('./mock/bookshelf.json', 'UTF-8')
+};
+module.exports.getFemaleData = function () {
+  return fs.readFileSync('./mock/channel/female.json', 'UTF-8')
+};
+module.exports.getMaleData = function () {
+  return fs.readFileSync('./mock/channel/male.json', 'UTF-8')
+};
+module.exports.getBookData = function (id) {
+  if (!id) {
+    id = '11111'
+  }
+  return fs.readFileSync('./mock/book/'+ id +'.json', 'UTF-8')
+};
 module.exports.getSearchData = (content) => {
   return new Promise((resolve) => {
-    const http = require('http');
     let http_request = {
       hostname: 'dushu.xiaomi.com',
       port: 80,
