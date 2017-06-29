@@ -3,8 +3,8 @@ const http = require('http');
 module.exports.getTestData = function () {
   return fs.readFileSync('./mock/test.json', 'UTF-8')
 };
-module.exports.getIndexData = function () {
-  return fs.readFileSync('./mock/index.json', 'UTF-8')
+module.exports.getHomeData = function () {
+  return fs.readFileSync('./mock/home.json', 'UTF-8')
 };
 module.exports.getRankData = function () {
   return fs.readFileSync('./mock/rank.json', 'UTF-8')

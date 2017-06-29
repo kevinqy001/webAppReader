@@ -1,0 +1,23 @@
+.top-home,
+.slide-banner{
+    width: 100%;
+}
+img.cover{
+    display: block;
+    width: 100%;
+}
+.top-home-tab{
+    display: flex;
+    background: #fff;
+}
+.top-home-tab-item {
+    flex: 1;
+    margin: 10px 0 4px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+}
+.top-home-tab-icon{
+    width: 32px;
+}

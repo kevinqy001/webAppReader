@@ -25,7 +25,7 @@ router.get('/ejs_test', async (ctx) => {
   })
 });
 router.get('/', async (ctx) => {
-  await ctx.render('index', {
+  await ctx.render('home', {
     title: '书城首页',
   })
 });
@@ -36,15 +36,24 @@ router.get('/book', async (ctx) => {
     bookId: bookId,
   })
 });
+router.get('/male', async (ctx) => {
+   await ctx.render('male');
+});
+router.get('/female', async (ctx) => {
+   await ctx.render('female');
+});
+router.get('/category', async (ctx) => {
+   await ctx.render('category');
+});
+router.get('/rank', async (ctx) => {
+   await ctx.render('rank');
+});
 router.get('/reader', async (ctx) => {
   let params = ctx.request.query;
   await ctx.render('reader', {})
 });
-router.get('/data_test', (ctx) => {
-  ctx.body = service.getTestData();
-});
-router.get('/ajax/index', (ctx) => {
-  ctx.body = service.getIndexData();
+router.get('/ajax/home', (ctx) => {
+  ctx.body = service.getHomeData();
 });
 router.get('/ajax/rank', (ctx) => {
   ctx.body = service.getRankData();

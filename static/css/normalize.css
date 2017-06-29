@@ -9,7 +9,9 @@
 
 /* Document
    ========================================================================== */
-
+*{
+  box-sizing: border-box;
+}
 html {
   font-family: "微软雅黑", "宋体", Arial, Helvetica, Verdana, Geneva, Tahoma, sans-serif !important;
   /* 1 */
@@ -22,7 +24,6 @@ html {
   font-size: 13px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Sections
@@ -122,6 +123,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent;
   /* 1 */
   -webkit-text-decoration-skip: objects;
