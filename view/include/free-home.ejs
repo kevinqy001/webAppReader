@@ -1,0 +1,21 @@
+<div class="channel-list-h5">
+    <div class="channel-list-h5-header">
+        <div class="channel-list-h5-header-title">本周限免</div>
+    </div>
+    <div class="list-h5">
+        <ul class="list-h5-bookWrap">
+            <li v-for="(item,index) in freeList">
+                <div class="book-h5">
+                    <div class="book-h5-cover">
+                        <img :src="item.data.cover">
+                    </div>
+                    <div class="book-h5-info">
+                        <div class="book-h5-info-title">{{item.data.title}}</div>
+                        <div class="book-h5-info-author">作者：{{item.data.authors}}</div>
+                        <div class="book-h5-info-summary">{{item.data.summary}}</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
