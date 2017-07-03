@@ -14,9 +14,9 @@
     <div class="m-action-control">
         <div id="action_center" class="action-control-center" @click="navShow"></div>
     </div>
-    <div id="top-nav" class="top-nav" v-show="showNav">
+    <div id="top-nav" class="top-nav" v-show="showNav" @click="toMain">
         <div class="icon-back"></div>
-        <div class="top-nav-title">返回书架</div>
+        <div class="top-nav-title">返回首页</div>
     </div>
     <div id="fiction_chapter_title"></div>
     <div id="fiction_container" class="m-read-content">

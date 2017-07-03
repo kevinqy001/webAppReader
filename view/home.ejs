@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="../static/css/normalize.css">
     <link type="text/css" rel="stylesheet" href="../static/css/animate.min.css">
     <link type="text/css" rel="stylesheet" href="../static/css/all.css">
-    <script src="../static/script/lib/vue.min.js"></script>
+    <script src="../static/script/lib/vue.js"></script>
     <script src="../static/script/lib/zepto.min.js"></script>
     <script src="../static/script/lib/axios.min.js"></script>
     <title>书城首页</title>
@@ -19,6 +19,7 @@
     <div class="container-wrap f-cb" :class="{'page-position-1': curTab, 'page-position-2': !curTab}">
         <div class="container-scroll">
             <% include include/top-home.ejs %>
+            <% include include/hot-home.ejs %>
             <% include include/recommend-home.ejs %>
             <% include include/free-home.ejs %>
             <% include include/bottom-tag-home.ejs %>

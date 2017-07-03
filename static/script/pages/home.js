@@ -6,12 +6,10 @@ axios.get('/ajax/home').then((res)=>{
       return {
         headerSearchShow: false,
         vHeaderSearchShow: false,
+        hotList: res.data.items[1].data.data,
         recommendList: res.data.items[2].data.data,
         freeList: res.data.items[5].data.data,
         curTab: true,
-        duration: 0,
-        position: 0,
-        headerPosition: 0,
         windowWidth,
         windowHeight
       }
@@ -25,6 +23,9 @@ axios.get('/ajax/home').then((res)=>{
       },
       changeTab (way) {
         this.curTab = way !== 1;
+      },
+      toBookDetail (id) {
+        location.href = '/detail?id=' + id
       }
     }
   }).$mount('#root');

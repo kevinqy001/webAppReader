@@ -12,6 +12,9 @@ new Vue({
     }
   },
   methods: {
+    toMain () {
+      location.href = '/'
+    },
     navShow () {
       this.showNav = !this.showNav;
       this.showFont = false;
