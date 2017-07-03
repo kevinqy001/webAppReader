@@ -17,5 +17,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joey",
-  "license": "ISC",
+  "repository": "https://github.com/kevinqy001/webAppReader",
+  "license": "ISC"
 }

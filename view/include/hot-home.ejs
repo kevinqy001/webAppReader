@@ -4,7 +4,7 @@
     </div>
     <div class="list-h5">
         <ul class="list-h5-bookWrap">
-            <li v-for="(item,index) in hotList" @click="toBookDetail(item.fiction_id)">
+            <li v-for="(item,index) in hotList" v-if="index > 0 && index < 4" @click="toBookDetail(item.fiction_id)">
                 <div class="book-h5">
                     <div class="book-h5-cover">
                         <img :src="item.cover">
