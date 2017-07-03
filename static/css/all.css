@@ -25,6 +25,11 @@ body {
     right: 0;
     width: 50%;
 }
+.container-bookshelf{
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
 
 .header-tab {
     position: relative;
@@ -35,6 +40,8 @@ body {
 }
 
 .header-tab i {
+    display: inline-block;
+    width: 50%;
     bottom: -1px;
 }
 
@@ -52,11 +59,11 @@ body {
 }
 .page-position-2{
     transition-duration: .5s;
-    transform: translate3d(-375px,0px,0px)
+    transform: translate3d(-50%,0px,0px)
 }
 .header-position-2{
     transition-duration: .5s;
-    transform: translate3d(128px, 0px, 0px);
+    transform: translate3d(100%, 0px, 0px);
 }
 
 .Swipe-tab {
@@ -73,7 +80,7 @@ body {
 
 .Swipe-tab i {
     position: absolute;
-    left: calc(25% - 22px);
+    left: 0;
     -webkit-transition: .5s ease-out;
 }
 
@@ -250,6 +257,7 @@ img.cover {
  }
 .book-h5-cover img{
     width: 70px;
+    height: 90px;
 }
 .book-h5-info{
     float: left;
@@ -279,4 +287,117 @@ img.cover {
 .bottom-tag p{
     line-height: 1.4em;
     color: #cccccc;
+}
+.book-shelf{
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    background-color: #fff;
+    display: flex;
+}
+
+.book-item{
+    flex: 1;
+    margin: 0 2.5%;
+}
+
+.bookshelf-h5-cover{
+    width: 100%;
+    height: 90px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0 0 1px 1px #ddd;
+}
+.bookshelf-h5-cover img{
+    width: 120%;
+}
+.common-header{
+    position: relative;
+    padding: 0 50px;
+    line-height: 44px;
+    background: #efeff0;
+    border-bottom: 1px solid #dddddd;
+}
+.common-header-back-icon{
+    position: absolute;
+    left: 13px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/common-header/icon-back.png") no-repeat center;
+    background-size: 22px;
+}
+.common-header-back-title{
+    color: #555555;
+    font-size: 14px;
+}
+.common-header-home{
+    position: absolute;
+    right:13px;
+    top: 11px;
+    width: 22px;
+    height: 22px;
+    background: url("../img/common-header/icon-home.png") no-repeat center;
+    background-size: 22px;
+}
+.detail-h5{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 20px 10px;
+}
+.detail-h5-cover {
+    width: 100px;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+}
+.detail-h5-cover img{
+    width: 100px;
+    height: 120px;
+}
+.detail-h5-info{
+    float: left;
+    height: 90px;
+    width: calc(100% - 120px);
+    margin-left: 15px;
+}
+.detail-h5-info-title{
+    color: #4fd096;
+    font-size: 14px;
+    font-weight: bold;
+}
+.detail-h5-info-author{
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+.detail-h5-info-summary{
+    font-size: 10px;
+    margin: 10px 0 0 0;
+}
+.detail-h5-info-tag{
+    margin: 10px 0 0 0;
+}
+.detail-h5-info-tag li{
+    float: left;
+    margin-right: 8px;
+    padding: 2px 4px;
+    height: 1.5em;
+    color: #fff;
+    background-color: #4fd096;
+    border-radius: 3px;
+}
+.detail-h5-button{
+    width: 90%;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    float: left;
+    margin: 20px 5% 0;
+    background-color: #4fd096;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 2px;
 }

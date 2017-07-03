@@ -11,26 +11,16 @@
     <script src="../static/script/lib/vue.min.js"></script>
     <script src="../static/script/lib/zepto.min.js"></script>
     <script src="../static/script/lib/axios.min.js"></script>
-    <title>书城首页</title>
+    <title>书籍详情</title>
 </head>
 <body>
 <div id="root">
-    <% include include/header.ejs %>
-    <div class="container-wrap f-cb" :class="{'page-position-1': curTab, 'page-position-2': !curTab}">
-        <div class="container-scroll">
-            <% include include/top-home.ejs %>
-            <% include include/recommend-home.ejs %>
-            <% include include/free-home.ejs %>
-            <% include include/bottom-tag-home.ejs %>
-        </div>
-        <div class="container-bookshelf" :style="{left: windowWidth + 'px', height: windowHeight + 'px'}">
-            <% include include/bookshelf-home.ejs %>
-        </div>
-    </div>
+    <% include include/common-header.ejs%>
+    <% include include/info-detail.ejs%>
 </div>
 </body>
 <script>
   window.jQuery = $;
 </script>
-<script src="../static/script/pages/home.js"></script>
+<script src="../static/script/pages/detail.js"></script>
 </html>

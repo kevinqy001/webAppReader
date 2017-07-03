@@ -1,0 +1,14 @@
+<div class="detail-h5 f-cb">
+    <div class="detail-h5-cover">
+        <img :src="detail.cover">
+    </div>
+    <div class="detail-h5-info">
+        <div class="detail-h5-info-title">{{detail.title}}</div>
+        <div class="detail-h5-info-author">作者：{{detail.authors}}</div>
+        <div class="detail-h5-info-summary">{{detail.summary}}</div>
+        <ul class="detail-h5-info-tag">
+           <li v-for="item in detail.tags">{{item}}</li>
+        </ul>
+    </div>
+    <div class="detail-h5-button">开始阅读</div>
+</div>

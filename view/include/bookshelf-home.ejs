@@ -1,1 +1,9 @@
-<div>XXXXXXXXXXXXXXXXXX</div>
+<ul class="book-shelf f-cb">
+    <li class="book-item" v-for="(item,index) in recommendList" v-if="index > 2 && index < 6">
+        <div class="bookshelf-h5">
+            <div class="bookshelf-h5-cover">
+                <img :src="item.cover">
+            </div>
+        </div>
+    </li>
+</ul>

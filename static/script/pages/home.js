@@ -1,4 +1,6 @@
 axios.get('/ajax/home').then((res)=>{
+  let windowWidth = $(window).width();
+  let windowHeight = $(window).height();
   new Vue({
     data () {
       return {
@@ -7,6 +9,11 @@ axios.get('/ajax/home').then((res)=>{
         recommendList: res.data.items[2].data.data,
         freeList: res.data.items[5].data.data,
         curTab: true,
+        duration: 0,
+        position: 0,
+        headerPosition: 0,
+        windowWidth,
+        windowHeight
       }
     },
     methods: {

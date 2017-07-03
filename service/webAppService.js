@@ -23,7 +23,7 @@ module.exports.getMaleData = function () {
 };
 module.exports.getBookData = function (id) {
   if (!id) {
-    id = '11111'
+    id = '18218'
   }
   return fs.readFileSync('./mock/book/'+ id +'.json', 'UTF-8')
 };

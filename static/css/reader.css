@@ -72,15 +72,16 @@ body {
     width: 100%;
     z-index: 9999;
     background: #000;
+    opacity: .8;
 }
 
 .icon-back {
     position: absolute;
-    top: 14px;
+    top: 13.5px;
     left: 10px;
     width: 23px;
     height: 23px;
-    background: url("../img/reader/icon-back.png") no-repeat center center;
+    background: url("./assets/images/icon-back.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -118,7 +119,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 18px auto 0;
-    background: url("../img/reader/icon-catalog.png") no-repeat center center;
+    background: url("./assets/images/icon-catalog.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -126,7 +127,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 18px auto 0;
-    background: url("../img/reader/icon-font.png") no-repeat center center;
+    background: url("./assets/images/icon-font.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -134,7 +135,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 18px auto 0;
-    background: url("../img/reader/icon-font-sel.png") no-repeat center center;
+    background: url("./assets/images/icon-font-sel.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -142,7 +143,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 18px auto 0;
-    background: url("../img/reader/icon-night.png") no-repeat center center;
+    background: url("./assets/images/icon-night.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -150,7 +151,7 @@ body {
     width: 20px;
     height: 20px;
     margin: 18px auto 0;
-    background: url("../img/reader/icon-day.png") no-repeat center center;
+    background: url("./assets/images/icon-day.png") no-repeat center center;
     background-size: 20px 20px;
 }
 
@@ -238,4 +239,3 @@ body {
     top: 30%;
     left: 15%;
 }
-

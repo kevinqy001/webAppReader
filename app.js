@@ -48,6 +48,9 @@ router.get('/category', async (ctx) => {
 router.get('/rank', async (ctx) => {
    await ctx.render('rank');
 });
+router.get('/detail', async (ctx) => {
+   await ctx.render('detail',{nav: '书籍列表'});
+});
 router.get('/reader', async (ctx) => {
   let params = ctx.request.query;
   await ctx.render('reader', {})
