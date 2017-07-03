@@ -52,8 +52,7 @@ router.get('/detail', async (ctx) => {
    await ctx.render('detail',{nav: '书籍列表'});
 });
 router.get('/reader', async (ctx) => {
-  let params = ctx.request.query;
-  await ctx.render('reader', {})
+   await ctx.render('reader');
 });
 router.get('/ajax/home', (ctx) => {
   ctx.body = service.getHomeData();
@@ -80,6 +79,18 @@ router.get('/ajax/book', (ctx) => {
     id = '';
   }
   ctx.body = service.getBookData(id);
+});
+
+router.get('/ajax/chapter', (ctx) => {
+  ctx.body = service.getChapterData();
+});
+router.get('/ajax/chapterData', (ctx) => {
+  let params = ctx.request.query;
+  let id = params.id;
+  if (!id) {
+    id = null;
+  }
+  ctx.body = service.getChapterContentData(id);
 });
 router.get('/ajax/search', async (ctx) => {
   let params = ctx.request.query;

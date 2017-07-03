@@ -1,5 +1,5 @@
 let id = '';
-axios.get('/ajax/book?' + id).then((res)=>{
+axios.get('/ajax/book?id=' + id).then((res)=>{
   new Vue({
      data () {
        return {

@@ -1,14 +1,20 @@
-<div class="detail-h5 f-cb">
-    <div class="detail-h5-cover">
-        <img :src="detail.cover">
+<div class="detail-h5">
+    <div class="detail-h5-wrap f-cb">
+        <div class="detail-h5-cover">
+            <img :src="detail.cover">
+        </div>
+        <div class="detail-h5-info">
+            <div class="detail-h5-info-title">{{detail.title}}</div>
+            <div class="detail-h5-info-author">作者：{{detail.authors}}</div>
+            <div class="detail-h5-info-score-count">{{detail.score_count}}个评价</div>
+            <div class="detail-h5-info-word-count">字数：{{detail.word_count}}<span class="detail-h5-info-isFinish"
+                                                                                 v-if="!detail.finish">连载中</span></div>
+            <span class="detail-h5-info-price">({{detail.price}}个豆豆/千字)</span>
+            <ul class="detail-h5-info-tag">
+                <li v-for="item in detail.tags">{{item}}</li>
+            </ul>
+        </div>
     </div>
-    <div class="detail-h5-info">
-        <div class="detail-h5-info-title">{{detail.title}}</div>
-        <div class="detail-h5-info-author">作者：{{detail.authors}}</div>
-        <div class="detail-h5-info-summary">{{detail.summary}}</div>
-        <ul class="detail-h5-info-tag">
-           <li v-for="item in detail.tags">{{item}}</li>
-        </ul>
-    </div>
-    <div class="detail-h5-button">开始阅读</div>
+    <div class="detail-h5-button ">开始阅读</div>
+    <div class="detail-h5-content">{{detail.content}}</div>
 </div>

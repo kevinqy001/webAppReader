@@ -345,7 +345,10 @@ img.cover {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    padding: 20px 20px 10px;
+    padding: 20px;
+}
+.detail-h5-wrap{
+
 }
 .detail-h5-cover {
     width: 100px;
@@ -371,11 +374,21 @@ img.cover {
 }
 .detail-h5-info-author{
     font-size: 12px;
-    margin: 10px 0 0 0;
+    margin: 6px 0 0 0;
 }
-.detail-h5-info-summary{
+.detail-h5-info-score-count,
+.detail-h5-info-price,
+.detail-h5-info-word-count{
     font-size: 10px;
-    margin: 10px 0 0 0;
+    margin: 6px 0 0 0;
+}
+.detail-h5-info-isFinish{
+    font-size: 10px;
+    padding: 2px 4px;
+    margin:0 0 0 8px;
+    background-color: #4fd096;
+    color: #fff;
+    border-radius: 2px;
 }
 .detail-h5-info-tag{
     margin: 10px 0 0 0;
@@ -394,10 +407,14 @@ img.cover {
     height: 3em;
     line-height: 3em;
     text-align: center;
-    float: left;
     margin: 20px 5% 0;
     background-color: #4fd096;
     color: #fff;
     border-radius: 5px;
     letter-spacing: 2px;
+}
+.detail-h5-content{
+    margin: 20px 0 0 0;
+    line-height: 1.4em;
+    font-size: 15px;
 }

@@ -24,14 +24,18 @@ new Vue({
       this.showFont = !this.showFont;
     },
     getFictionInfo (chapterCon) {
-      axios.get('../../mock/reader/chapter.json').then((res) => {
+      axios.get('/ajax/chapter').then((res) => {
         this.Chapter_id = res.data.chapters[chapterCon].chapter_id;
         this.Chapter_len = res.data.chapters.length;
         this.getFictionContent(this.Chapter_id)
       })
     },
     getFictionContent (chapter_id) {
-      axios.get(`../../mock/reader/data${chapter_id}.json`).then((res) => {
+      axios.get('/ajax/chapterData',{
+        params: {
+          id: chapter_id
+        }
+      }).then((res) => {
         if (res.data.result === 0) {
           let url = res.data.jsonp;
           $.jsonp({
