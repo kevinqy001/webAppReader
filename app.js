@@ -110,6 +110,6 @@ router.get('/ajax/search', async (ctx) => {
 
 app.use(router.routes());
 
-app.listen(3002);
+app.listen(kevinqy001.github.io:3002);
 console.log('Koa Server is running at localhost:3002!');
 
