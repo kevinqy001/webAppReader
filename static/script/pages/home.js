@@ -1,6 +1,10 @@
 axios.get('/ajax/home').then((res)=>{
   let windowWidth = $(window).width();
   let windowHeight = $(window).height();
+  $('#root').css({
+    width: windowWidth,
+    height: windowHeight
+  });
   new Vue({
     data () {
       return {

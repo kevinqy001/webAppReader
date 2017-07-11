@@ -1,0 +1,21 @@
+<div class="channel-list-h5">
+    <div class="channel-list-h5-header">
+        <div class="channel-list-h5-header-title">{{recoList.ad_name}}</div>
+    </div>
+    <div class="list-h5">
+        <ul class="list-h5-bookWrap">
+            <li v-for="(item,index) in recoList.data.data" v-if="index >= 0 && index <= 5">
+                <div class="book-h5">
+                    <div class="book-h5-cover">
+                        <img :src="item.cover">
+                    </div>
+                    <div class="book-h5-info">
+                        <div class="book-h5-info-title">{{item.title}}</div>
+                        <div class="book-h5-info-author">作者：{{item.authors}}</div>
+                        <div class="book-h5-info-summary">{{item.summary}}</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

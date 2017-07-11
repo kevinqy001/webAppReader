@@ -4,6 +4,7 @@
 
 body {
     background: #dddddd;
+    overflow: hidden;
 }
 #root{
     overflow: hidden;
@@ -24,6 +25,15 @@ body {
     left: 0;
     right: 0;
     width: 50%;
+}
+.container-scroll-channel{
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 .container-bookshelf{
     position: absolute;

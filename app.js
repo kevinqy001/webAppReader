@@ -93,6 +93,7 @@ router.get('/ajax/chapterData', (ctx) => {
   ctx.body = service.getChapterContentData(id);
 });
 router.get('/ajax/search', async (ctx) => {
+  const qs = require('querystring');
   let params = ctx.request.query;
   let start = params.start;
   let end = params.end;

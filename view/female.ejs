@@ -1,3 +1,25 @@
-<div>
-    female
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link type="text/css" rel="stylesheet" href="../static/css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="../static/css/all.css">
+    <script src="../static/script/lib/vue.min.js"></script>
+    <script src="../static/script/lib/axios.min.js"></script>
+    <title>书籍详情</title>
+</head>
+<body>
+<div id="root">
+    <div class="container-scroll-channel">
+        <% include include/pop-channel.ejs %>
+        <% include include/reco-channel.ejs %>
+        <% include include/new-channel.ejs %>
+        <% include include/end-channel.ejs %>
+    </div>
 </div>
+</body>
+<script src="../static/script/pages/female.js"></script>
+</html>
